@@ -1,12 +1,11 @@
+# Terraform Settings Block
 terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.27"
+      #version = "~> 3.21" # Optional but recommended in production
     }
   }
-
-  required_version = ">= 0.14.9"
 }
 
 #Provider profile and region in which all the resources will create
